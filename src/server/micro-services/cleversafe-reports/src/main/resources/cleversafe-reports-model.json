@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.0",
+  "info": {},
+  "components": {
+    "schemas": {
+      "NewVaultSummary": {
+        "type": "object",
+        "description": "Vault Summary",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Vault name"
+          },
+          "description": {
+            "type": "string",
+            "description": "Vault description"
+          },
+          "capacity": {
+            "type": "number",
+            "description": "Vault capacity in TB"
+          },
+          "used": {
+            "type": "number",
+            "description": "Vault capacity used in TB"
+          },
+          "timestamp": {
+            "type": "string",
+            "description": "Vault creation date",
+            "example": "1995-09-07T10:40:52Z",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

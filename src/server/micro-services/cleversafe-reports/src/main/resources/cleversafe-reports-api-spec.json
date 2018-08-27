@@ -66,7 +66,7 @@
             }
           },
           "500": {
-            "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/common/src/main/resources/common-model.json#/components/responses/ServiceError"
+            "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/common/src/main/resources/common-dto.json#/components/responses/ErrorResponse"
           }
         }
       }

@@ -9,6 +9,7 @@
 package gov.nih.nci.hrp.ms.cleversafereports.service.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
+import gov.nih.nci.hrp.common.model.ErrorType;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
@@ -61,7 +62,7 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
 
     @Override
     public VaultSummaryResponse getNewVaultSummary() throws HrpException {
-        throw new HrpException("error message", HrpException.ErrorType.INVALID_REQUEST);
+        throw new HrpException("error message", ErrorType.INVALID_REQUEST);
     }
 }
 

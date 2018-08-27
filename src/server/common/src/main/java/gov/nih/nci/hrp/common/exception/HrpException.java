@@ -9,6 +9,8 @@
  */
 package gov.nih.nci.hrp.common.exception;
 
+import gov.nih.nci.hrp.common.model.ErrorType;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -18,14 +20,6 @@ import java.io.StringWriter;
  * @author <a href="mailto:eran.rosenberg@nih.gov">Eran Rosenberg</a>
  */
 public class HrpException extends Exception implements java.io.Serializable {
-
-    //---------------------------------------------------------------------//
-    // Types
-    //---------------------------------------------------------------------//
-    public enum ErrorType {
-
-        CONFIGURATION_ERROR, INVALID_REQUEST, REQUEST_REJECTED, INTEGRATION_ERROR, UNEXPECTED_ERROR
-    }
 
     //---------------------------------------------------------------------//
     // Instance members

@@ -81,6 +81,36 @@
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>generate-model</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/src/main/resources/cleversafe-reports-model.json
+                            </inputSpec>
+                            <generatorName>spring</generatorName>
+                            <modelPackage>gov.nih.nci.hrp.ms.cleversafereports.model</modelPackage>
+                            <generateApis>false</generateApis>
+                            <generateModels>true</generateModels>
+                            <generateSupportingFiles>false</generateSupportingFiles>
+                            <validateSpec>false</validateSpec>
+                            <configOptions>
+                                <interfaceOnly>true</interfaceOnly>
+                                <serializableModel>true</serializableModel>
+                                <withXML>true</withXML>
+                                <useTags>true</useTags>
+                                <hideGenerationTimestamp>true</hideGenerationTimestamp>
+                                <dateLibrary>java8</dateLibrary>
+                                <useBeanValidation>true</useBeanValidation>
+                                <useOptional>true</useOptional>
+                                <java8>false</java8>
+                                <developerName>Eran Rosenberg</developerName>
+                                <developerEmail>eran.rosenberg@nih.gov</developerEmail>
+                            </configOptions>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-api</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
@@ -88,13 +118,13 @@
                             <inputSpec>${project.basedir}/src/main/resources/cleversafe-reports-api-spec.json
                             </inputSpec>
                             <generatorName>spring</generatorName>
-                            <modelPackage>gov.nih.nci.hrp.ms.cleversafereports.model</modelPackage>
+                            <modelPackage>gov.nih.nci.hrp.ms.cleversafereports.dto</modelPackage>
                             <apiPackage>gov.nih.nci.hrp.ms.cleversafereports.ws.rest</apiPackage>
                             <generateApis>true</generateApis>
                             <generateModels>true</generateModels>
                             <generateSupportingFiles>false</generateSupportingFiles>
                             <importMappings>
-                                <importMapping>ServiceError=gov.nih.nci.hrp.common.model.ServiceError</importMapping>
+                                <importMapping>ErrorResponse=gov.nih.nci.hrp.common.dto.ErrorResponse</importMapping>
                             </importMappings>
                             <templateDirectory>${project.build.directory}/openapi-templates</templateDirectory>
                             <configOptions>

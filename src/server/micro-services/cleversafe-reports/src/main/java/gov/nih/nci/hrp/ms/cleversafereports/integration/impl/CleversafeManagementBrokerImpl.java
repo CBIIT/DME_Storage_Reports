@@ -9,7 +9,7 @@
 package gov.nih.nci.hrp.ms.cleversafereports.integration.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
-import gov.nih.nci.hrp.common.exception.HrpException.ErrorType;
+import gov.nih.nci.hrp.common.model.ErrorType;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import org.json.simple.JSONArray;

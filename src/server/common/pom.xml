@@ -73,6 +73,9 @@
                             <generateModels>true</generateModels>
                             <generateSupportingFiles>false</generateSupportingFiles>
                             <validateSpec>false</validateSpec>
+                            <importMappings>
+                                <importMapping>ErrorType=gov.nih.nci.hrp.common.model.ErrorType</importMapping>
+                            </importMappings>
                             <configOptions>
                                 <serializableModel>true</serializableModel>
                                 <withXML>true</withXML>

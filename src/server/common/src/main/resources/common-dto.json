@@ -13,6 +13,9 @@
           "message": {
             "description": "A message describing the error",
             "type": "string"
+          },
+          "type": {
+            "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/common/src/main/resources/common-model.json#/components/schemas/ErrorType"
           }
         }
       }
