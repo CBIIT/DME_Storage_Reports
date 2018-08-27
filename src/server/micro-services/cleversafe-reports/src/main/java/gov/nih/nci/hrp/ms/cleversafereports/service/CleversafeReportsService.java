@@ -10,6 +10,7 @@ package gov.nih.nci.hrp.ms.cleversafereports.service;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
+import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 
 /**
  * Cleversafe Reports Service Interface.
@@ -19,10 +20,18 @@ import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 public interface CleversafeReportsService {
 
     /**
-     * Get summary report for all vaults.
+     * Get summary report of all vaults.
      *
      * @return An array of vault summary.
      * @throws Exception on cloud storage management system failure.
      */
     VaultSummary[] getVaultSummary() throws HrpException;
+
+    /**
+     * Get summary report of all vaults.
+     *
+     * @return Vault summary response DTO.
+     * @throws HrpException on cloud storage management system failure.
+     */
+    VaultSummaryResponse getNewVaultSummary() throws HrpException;
 }

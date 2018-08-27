@@ -36,6 +36,7 @@
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>generate-common-model</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
@@ -46,6 +47,32 @@
                             <generateApis>false</generateApis>
                             <generateModels>true</generateModels>
                             <generateSupportingFiles>false</generateSupportingFiles>
+                            <validateSpec>false</validateSpec>
+                            <configOptions>
+                                <serializableModel>true</serializableModel>
+                                <withXML>true</withXML>
+                                <useTags>true</useTags>
+                                <hideGenerationTimestamp>true</hideGenerationTimestamp>
+                                <dateLibrary>java8</dateLibrary>
+                                <useBeanValidation>true</useBeanValidation>
+                                <useOptional>true</useOptional>
+                                <java8>false</java8>
+                            </configOptions>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-common-dto</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/src/main/resources/common-dto.json</inputSpec>
+                            <generatorName>spring</generatorName>
+                            <modelPackage>gov.nih.nci.hrp.common.dto</modelPackage>
+                            <generateApis>false</generateApis>
+                            <generateModels>true</generateModels>
+                            <generateSupportingFiles>false</generateSupportingFiles>
+                            <validateSpec>false</validateSpec>
                             <configOptions>
                                 <serializableModel>true</serializableModel>
                                 <withXML>true</withXML>

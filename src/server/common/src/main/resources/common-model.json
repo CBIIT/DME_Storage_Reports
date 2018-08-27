@@ -3,30 +3,16 @@
   "info": {},
   "components": {
     "schemas": {
-      "ServiceError": {
-        "description": "Error details",
-        "properties": {
-          "stackTrace": {
-            "description": "The error stack trace",
-            "type": "string"
-          },
-          "message": {
-            "description": "A message describing the error",
-            "type": "string"
-          }
-        }
-      }
-    },
-    "responses": {
-      "ServiceError": {
-        "description": "Service failure",
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "#/components/schemas/ServiceError"
-            }
-          }
-        }
+      "ErrorType": {
+        "description": "Error type",
+        "type": "string",
+        "enum": [
+          "CONFIGURATION_ERROR",
+          "INVALID_REQUEST",
+          "REQUEST_REJECTED",
+          "INTEGRATION_ERROR",
+          "UNEXPECTED_ERROR"
+        ]
       }
     }
   }

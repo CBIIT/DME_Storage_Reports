@@ -9,18 +9,15 @@
 package gov.nih.nci.hrp.ms.cleversafereports.ws.rest.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
-import gov.nih.nci.hrp.ms.cleversafereports.model.NewVaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
-import gov.nih.nci.hrp.ms.cleversafereports.ws.rest.ReportsApi;
+import gov.nih.nci.hrp.ms.cleversafereports.ws.rest.CleversafeReportsApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.math.BigDecimal;
 
 /**
  * Cleversafe Reports REST Controller.
@@ -29,7 +26,7 @@ import java.math.BigDecimal;
  */
 @CrossOrigin
 @RestController
-class CleversafeReportsController implements ReportsApi {
+class CleversafeReportsController implements CleversafeReportsApi {
 
     // ---------------------------------------------------------------------//
     // Instance members
@@ -40,21 +37,11 @@ class CleversafeReportsController implements ReportsApi {
     private CleversafeReportsService cleversafeReportsService;
 
     // ---------------------------------------------------------------------//
-    // Constructors
-    // ---------------------------------------------------------------------//
-
-    /**
-     * Constructor for Spring Dependency Injection.
-     */
-    private CleversafeReportsController() {
-    }
-
-    // ---------------------------------------------------------------------//
     // Methods
     // ---------------------------------------------------------------------//
 
     // ---------------------------------------------------------------------//
-    // ReportsApi  Interface Implementation
+    // CleversafeReportsApi Interface Implementation
     // ---------------------------------------------------------------------//
 
     @RequestMapping("/reports/vaultsummary")
@@ -63,12 +50,7 @@ class CleversafeReportsController implements ReportsApi {
     }
 
     @Override
-    public ResponseEntity<VaultSummaryResponse> getNewVaultSummary() {
-        VaultSummaryResponse response = new VaultSummaryResponse();
-        NewVaultSummary vs = new NewVaultSummary();
-        vs.setName("Test");
-        vs.setCapacity(new BigDecimal(123456));
-        response.add(vs);
-        return ResponseEntity.ok(response);
+    public ResponseEntity<VaultSummaryResponse> getNewVaultSummary() throws HrpException {
+        return ResponseEntity.ok(cleversafeReportsService.getNewVaultSummary());
     }
 }

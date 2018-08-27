@@ -44,6 +44,39 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-domain-types</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>common</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/openapi-templates</outputDirectory>
+                                    <includes>**/*.mustache</includes>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>common</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                    <includes>**/keystore.p12</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.openapitools</groupId>
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <executions>
@@ -60,6 +93,10 @@
                             <generateApis>true</generateApis>
                             <generateModels>true</generateModels>
                             <generateSupportingFiles>false</generateSupportingFiles>
+                            <importMappings>
+                                <importMapping>ServiceError=gov.nih.nci.hrp.common.model.ServiceError</importMapping>
+                            </importMappings>
+                            <templateDirectory>${project.build.directory}/openapi-templates</templateDirectory>
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
                                 <serializableModel>true</serializableModel>
@@ -70,6 +107,8 @@
                                 <useBeanValidation>true</useBeanValidation>
                                 <useOptional>true</useOptional>
                                 <java8>false</java8>
+                                <developerName>Eran Rosenberg</developerName>
+                                <developerEmail>eran.rosenberg@nih.gov</developerEmail>
                             </configOptions>
                         </configuration>
                     </execution>

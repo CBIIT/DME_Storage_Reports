@@ -11,6 +11,7 @@ package gov.nih.nci.hrp.ms.cleversafereports.service.impl;
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
+import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,16 +40,6 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     // ---------------------------------------------------------------------//
-    // Constructors
-    // ---------------------------------------------------------------------//
-
-    /**
-     * Constructor for Spring Dependency Injection.
-     */
-    private CleversafeReportsServiceImpl() {
-    }
-
-    // ---------------------------------------------------------------------//
     // Methods
     // ---------------------------------------------------------------------//
 
@@ -68,4 +59,10 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
         return vaultsSummary.toArray(vaultSummariesArray);
     }
 
+    @Override
+    public VaultSummaryResponse getNewVaultSummary() throws HrpException {
+        throw new HrpException("error message", HrpException.ErrorType.INVALID_REQUEST);
+    }
 }
+
+

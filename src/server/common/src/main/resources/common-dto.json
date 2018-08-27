@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.0",
+  "info": {},
+  "components": {
+    "schemas": {
+      "ErrorResponse": {
+        "description": "Error details",
+        "properties": {
+          "stackTrace": {
+            "description": "The error stack trace",
+            "type": "string"
+          },
+          "message": {
+            "description": "A message describing the error",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "responses": {
+      "ErrorResponse": {
+        "description": "Service failure",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  }
+}
