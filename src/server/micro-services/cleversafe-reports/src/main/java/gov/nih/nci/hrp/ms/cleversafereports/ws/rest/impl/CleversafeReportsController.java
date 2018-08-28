@@ -9,8 +9,8 @@
 package gov.nih.nci.hrp.ms.cleversafereports.ws.rest.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
+import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
-import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
 import gov.nih.nci.hrp.ms.cleversafereports.ws.rest.CleversafeReportsApi;
 import org.springframework.beans.factory.annotation.Autowired;

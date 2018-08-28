@@ -10,9 +10,9 @@ package gov.nih.nci.hrp.ms.cleversafereports.service.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.common.model.ErrorType;
+import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
-import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

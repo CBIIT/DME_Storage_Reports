@@ -74,39 +74,11 @@
   },
   "components": {
     "schemas": {
-      "NewVaultSummary": {
-        "type": "object",
-        "description": "Vault Summary",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "Vault name"
-          },
-          "description": {
-            "type": "string",
-            "description": "Vault description"
-          },
-          "capacity": {
-            "type": "number",
-            "description": "Vault capacity in TB"
-          },
-          "used": {
-            "type": "number",
-            "description": "Vault capacity used in TB"
-          },
-          "timestamp": {
-            "type": "string",
-            "description": "Vault creation date",
-            "example": "1995-09-07T10:40:52Z",
-            "format": "date-time"
-          }
-        }
-      },
       "VaultSummaryResponse": {
         "description": "Vault Summary Response DTO",
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/NewVaultSummary"
+          "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json#/components/schemas/NewVaultSummary"
         }
       }
     }

@@ -9,8 +9,8 @@
 package gov.nih.nci.hrp.ms.cleversafereports.service;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
+import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
-import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummaryResponse;
 
 /**
  * Cleversafe Reports Service Interface.

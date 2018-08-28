@@ -19,8 +19,12 @@ import org.springframework.context.annotation.ComponentScan;
  * @author <a href="mailto:eran.rosenberg@nih.gov">Eran Rosenberg</a>
  */
 @SpringBootApplication
-@ComponentScan({"gov.nih.nci.hrp.ms.cleversafereports.*"})
+@ComponentScan({"gov.nih.nci.hrp.*"})
 class CleversafeReportsApplication {
+
+    // ---------------------------------------------------------------------//
+    // Methods
+    // ---------------------------------------------------------------------//
 
     /**
      * Application's main().

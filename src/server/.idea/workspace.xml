@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8e719e-d9bb-4dcd-82f0-a54c98f95d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/ws/rest/impl/HrpExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/exception/HrpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/exception/HrpException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/common-dto.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/common-dto.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/impl/CleversafeManagementBrokerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/impl/CleversafeManagementBrokerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/app/CleversafeReportsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/app/CleversafeReportsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/micro-services/target/" />
@@ -38,91 +38,52 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="272" />
-          <entry key="json" value="335" />
+          <entry key="java" value="850" />
+          <entry key="json" value="368" />
           <entry key="mustache" value="160" />
           <entry key="txt" value="176" />
-          <entry key="xml" value="449" />
+          <entry key="xml" value="483" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Handlebars/Mustache" value="37" />
-          <entry key="JAVA" value="273" />
-          <entry key="JSON" value="335" />
+          <entry key="JAVA" value="851" />
+          <entry key="JSON" value="368" />
           <entry key="PLAIN_TEXT" value="298" />
-          <entry key="XML" value="449" />
+          <entry key="XML" value="483" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="47" />
-          <entry key="json" value="14" />
+          <entry key="java" value="57" />
+          <entry key="json" value="15" />
           <entry key="mustache" value="7" />
-          <entry key="xml" value="13" />
+          <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Handlebars/Mustache" value="2" />
-          <entry key="JAVA" value="47" />
-          <entry key="JSON" value="14" />
+          <entry key="JAVA" value="57" />
+          <entry key="JSON" value="15" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="49" column="62" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/resources/common-model.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -144,16 +105,18 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/CleversafeReportsApi.java" />
         <option value="$PROJECT_DIR$/common/src/main/resources/api.mustache" />
-        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java" />
-        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java" />
         <option value="$PROJECT_DIR$/common/src/main/resources/common-model.json" />
-        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json" />
-        <option value="$PROJECT_DIR$/common/src/main/resources/common-dto.json" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/exception/HrpException.java" />
-        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java" />
         <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/impl/CleversafeManagementBrokerImpl.java" />
         <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json" />
+        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json" />
+        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java" />
+        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java" />
+        <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/app/CleversafeReportsApplication.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/ws/rest/impl/HrpExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/common/src/main/resources/common-dto.json" />
         <option value="$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml" />
       </list>
     </option>
@@ -193,49 +156,6 @@
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="micro-services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,147 +163,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="micro-services" type="462c0819:PsiDirectoryNode" />
               <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafereports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafereports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafereports" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="micro-services" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafe-reports" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="openapi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cleversafereports" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -401,11 +180,14 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535385564322" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535420312109" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gov.nih.nci.hrp.common.ws.rest.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources" />
       <recent name="$PROJECT_DIR$/common/src/main/resources" />
@@ -451,7 +233,7 @@
       <workItem from="1535137315178" duration="3090000" />
       <workItem from="1535321246777" duration="1760000" />
       <workItem from="1535323757785" duration="2043000" />
-      <workItem from="1535381449116" duration="4392000" />
+      <workItem from="1535381449116" duration="7992000" />
     </task>
     <task id="LOCAL-00001" summary="Moved ServiceError to a model in the common project.">
       <created>1534711931219</created>
@@ -467,11 +249,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535383305769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added mustache template to generate service apis + further refine of generating models and dto from separate json files">
+      <created>1535385966248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535385966248</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18134000" />
+    <option name="totallyTimeSpent" value="21734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -533,24 +322,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/CleversafeReportsApiController.java" />
     <entry file="file://$PROJECT_DIR$/../../../../openapi-generator/modules/openapi-generator/src/main/resources/JavaSpring/apiController.mustache" />
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/model/NewVaultSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/CleversafeManagementBroker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -568,17 +343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/common/model/ServiceError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -586,28 +350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/common/model/ErrorResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/common-dto.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="172" selection-start-line="17" selection-start-column="172" selection-end-line="17" selection-end-column="172" />
         </state>
       </provider>
     </entry>
@@ -669,37 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/exception/HrpException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/impl/CleversafeManagementBrokerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/resources/common-model.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -714,17 +429,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml">
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
+        <state relative-caret-position="480">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-api-spec.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+        <state relative-caret-position="664">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/dto/NewVaultSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/model/NewVaultSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/target/generated-sources/openapi/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/dto/VaultSummaryResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/CleversafeReportsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/service/impl/CleversafeReportsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/exception/HrpException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="3" selection-start-line="16" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/integration/impl/CleversafeManagementBrokerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="74" column="7" selection-start-line="69" selection-end-line="74" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/ws/rest/impl/CleversafeReportsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="40" column="78" selection-start-line="38" selection-start-column="1" selection-end-line="40" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/src/main/java/gov/nih/nci/hrp/ms/cleversafereports/app/CleversafeReportsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/gov/nih/nci/hrp/common/ws/rest/impl/HrpExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/common-dto.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-services/cleversafe-reports/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="80" column="58" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="58" />
         </state>
       </provider>
     </entry>
