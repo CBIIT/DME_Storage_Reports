@@ -9,7 +9,6 @@
 package gov.nih.nci.hrp.ms.cleversafereports.service.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
-import gov.nih.nci.hrp.common.model.ErrorType;
 import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
@@ -50,7 +49,6 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
 
     @Override
     public VaultSummary[] getVaultSummary() throws HrpException {
-
         // Get the vaults summary report.
         Collection<VaultSummary> vaultsSummary = cleversafeManagementBroker.getVaultsSummary();
         logger.info("Vault Summary Report size: {}", vaultsSummary.size());
@@ -62,7 +60,12 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
 
     @Override
     public VaultSummaryResponse getNewVaultSummary() throws HrpException {
-        throw new HrpException("error message", ErrorType.INVALID_REQUEST);
+        VaultSummaryResponse vaultSummaryResponse = new VaultSummaryResponse();
+
+        // Get the vault summary for all vaults from Cleversafe.
+        vaultSummaryResponse.addAll(cleversafeManagementBroker.getVaultSummary());
+
+        return vaultSummaryResponse;
     }
 }
 

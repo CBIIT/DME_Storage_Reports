@@ -9,6 +9,7 @@
 package gov.nih.nci.hrp.ms.cleversafereports.integration;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
+import gov.nih.nci.hrp.ms.cleversafereports.model.NewVaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 
 import java.util.Collection;
@@ -27,4 +28,12 @@ public interface CleversafeManagementBroker {
      * @throws Exception on cloud storage management system failure.
      */
     Collection<VaultSummary> getVaultsSummary() throws HrpException;
+
+    /**
+     * Get summary report for all cloud storage vaults.
+     *
+     * @return A collection of vault summary.
+     * @throws Exception on cloud storage management system failure.
+     */
+    Collection<NewVaultSummary> getVaultSummary() throws HrpException;
 }
