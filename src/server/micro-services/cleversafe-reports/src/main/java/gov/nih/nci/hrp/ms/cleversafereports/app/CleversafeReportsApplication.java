@@ -20,7 +20,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan({"gov.nih.nci.hrp.*"})
-class CleversafeReportsApplication {
+public class CleversafeReportsApplication {
 
     // ---------------------------------------------------------------------//
     // Methods
