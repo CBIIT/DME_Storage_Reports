@@ -3,7 +3,7 @@
   "info": {},
   "components": {
     "schemas": {
-      "NewVaultSummary": {
+      "VaultSummary": {
         "type": "object",
         "description": "Vault Summary",
         "properties": {
