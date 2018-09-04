@@ -1,4 +1,4 @@
-/**
+/*
  * CleversafeReportsController.java
  * <p>
  * Copyright SVG, Inc. Copyright Leidos Biomedical Research, Inc
@@ -41,12 +41,6 @@ class CleversafeReportsController implements CleversafeReportsApi {
     // ---------------------------------------------------------------------//
     // CleversafeReportsApi Interface Implementation
     // ---------------------------------------------------------------------//
-
-    /*
-    @RequestMapping("/reports/vaultsummary")
-    public VaultSummaryOld[] getVaultSummary() throws HrpException {
-        return cleversafeReportsService.getVaultSummary();
-    }*/
 
     @Override
     public ResponseEntity<VaultSummaryResponse> getVaultSummary() throws HrpException {

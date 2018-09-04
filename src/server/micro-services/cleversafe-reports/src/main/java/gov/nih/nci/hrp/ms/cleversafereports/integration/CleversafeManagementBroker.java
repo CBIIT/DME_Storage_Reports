@@ -1,4 +1,4 @@
-/**
+/*
  * CleversafeManagementBroker.java
  * <p>
  * Copyright SVG, Inc. Copyright Leidos Biomedical Research, Inc
@@ -24,15 +24,7 @@ public interface CleversafeManagementBroker {
      * Get summary report for all cloud storage vaults.
      *
      * @return A collection of vault summary.
-     * @throws Exception on cloud storage management system failure.
-     */
-    //Collection<VaultSummaryOld> getVaultsSummary() throws HrpException;
-
-    /**
-     * Get summary report for all cloud storage vaults.
-     *
-     * @return A collection of vault summary.
-     * @throws Exception on cloud storage management system failure.
+     * @throws HrpException on cloud storage management system failure.
      */
     Collection<VaultSummary> getVaultSummary() throws HrpException;
 }

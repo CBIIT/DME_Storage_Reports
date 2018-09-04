@@ -20,13 +20,11 @@ public final class DisableSSLCertificateCheckUtil {
      * Trust manager that does not perform nay checks.
      */
     private static class NullX509TrustManager implements X509TrustManager {
-        public void checkClientTrusted(X509Certificate[] chain, String authType)
-                throws CertificateException {
+        public void checkClientTrusted(X509Certificate[] chain, String authType) {
             System.out.println();
         }
 
-        public void checkServerTrusted(X509Certificate[] chain, String authType)
-                throws CertificateException {
+        public void checkServerTrusted(X509Certificate[] chain, String authType) {
             System.out.println();
         }
 
@@ -48,8 +46,7 @@ public final class DisableSSLCertificateCheckUtil {
     /**
      * Disable trust checks for SSL connections.
      */
-    public static void disableChecks() throws NoSuchAlgorithmException,
-            KeyManagementException {
+    public static void disableChecks() {
 
         try {
             new URL("https://0.0.0.0/").getContent();

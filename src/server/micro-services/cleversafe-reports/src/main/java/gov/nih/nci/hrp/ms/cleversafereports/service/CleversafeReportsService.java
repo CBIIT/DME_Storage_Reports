@@ -1,4 +1,4 @@
-/**
+/*
  * CleversafeReportsService.java
  * <p>
  * Copyright SVG, Inc. Copyright Leidos Biomedical Research, Inc
@@ -17,14 +17,6 @@ import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
  * @author <a href="mailto:eran.rosenberg@nih.gov">Eran Rosenberg</a>
  */
 public interface CleversafeReportsService {
-
-    /**
-     * Get summary report of all vaults.
-     *
-     * @return An array of vault summary.
-     * @throws Exception on cloud storage management system failure.
-     */
-    //VaultSummaryOld[] getVaultSummary() throws HrpException;
 
     /**
      * Get summary report of all vaults.

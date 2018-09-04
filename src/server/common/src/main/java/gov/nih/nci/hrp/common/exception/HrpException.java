@@ -1,4 +1,4 @@
-/**
+/*
  * HrpException.java
  * <p>
  * Copyright SVG, Inc.
@@ -29,7 +29,7 @@ public class HrpException extends Exception implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
 
     // The error type value.
-    private ErrorType errorType = null;
+    private final ErrorType errorType;
 
     //---------------------------------------------------------------------//
     // constructors
@@ -38,8 +38,8 @@ public class HrpException extends Exception implements java.io.Serializable {
     /**
      * Default constructor is disabled.
      */
-    @SuppressWarnings("unused")
     private HrpException() {
+        errorType = null;
     }
 
     /**
@@ -52,22 +52,6 @@ public class HrpException extends Exception implements java.io.Serializable {
     public HrpException(String message, ErrorType errorType) {
         super(message);
         this.errorType = errorType;
-    }
-
-    /**
-     * Constructs a new HrpException with a given message, and
-     * a Throwable cause
-     *
-     * @param message The message for the exception.
-     * @param cause   The root cause Throwable.
-     */
-    public HrpException(String message, Throwable cause) {
-        super(message, cause);
-
-        // Propagate the error type, and reject reason if the cause is a HrpException.
-        if (cause instanceof HrpException) {
-            this.errorType = ((HrpException) cause).getErrorType();
-        }
     }
 
     /**

@@ -1,5 +1,5 @@
-/**
- * HrpException.java
+/*
+ * CleversafeReportsApplication.java
  * <p>
  * Copyright SVG, Inc.
  * Copyright Leidos Biomedical Research, Inc
@@ -31,9 +31,9 @@ public class CleversafeReportsApplication {
      *
      * @param args Application arguments.
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        // TODO - Fix
+        // TODO - Fix it.
         DisableSSLCertificateCheckUtil.disableChecks();
 
         // Run the spring boot application.
