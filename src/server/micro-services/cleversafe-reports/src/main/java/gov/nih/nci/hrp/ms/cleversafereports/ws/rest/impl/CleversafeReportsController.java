@@ -10,13 +10,11 @@ package gov.nih.nci.hrp.ms.cleversafereports.ws.rest.impl;
 
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
-import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
 import gov.nih.nci.hrp.ms.cleversafereports.ws.rest.CleversafeReportsApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -44,13 +42,14 @@ class CleversafeReportsController implements CleversafeReportsApi {
     // CleversafeReportsApi Interface Implementation
     // ---------------------------------------------------------------------//
 
+    /*
     @RequestMapping("/reports/vaultsummary")
-    public VaultSummary[] getVaultSummary() throws HrpException {
+    public VaultSummaryOld[] getVaultSummary() throws HrpException {
         return cleversafeReportsService.getVaultSummary();
-    }
+    }*/
 
     @Override
-    public ResponseEntity<VaultSummaryResponse> getNewVaultSummary() throws HrpException {
-        return ResponseEntity.ok(cleversafeReportsService.getNewVaultSummary());
+    public ResponseEntity<VaultSummaryResponse> getVaultSummary() throws HrpException {
+        return ResponseEntity.ok(cleversafeReportsService.getVaultSummary());
     }
 }

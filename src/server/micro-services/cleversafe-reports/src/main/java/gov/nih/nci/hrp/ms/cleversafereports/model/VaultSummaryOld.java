@@ -1,6 +1,6 @@
 package gov.nih.nci.hrp.ms.cleversafereports.model;
 
-public class VaultSummary {
+public class VaultSummaryOld {
 
     private String name = null;
     private String description = null;

@@ -11,7 +11,6 @@ package gov.nih.nci.hrp.ms.cleversafereports.integration.impl;
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.common.model.ErrorType;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
-import gov.nih.nci.hrp.ms.cleversafereports.model.NewVaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -88,8 +87,46 @@ class CleversafeManagementBrokerImpl implements CleversafeManagementBroker {
     // CleversafeManagementBroker Interface Implementation
     // ---------------------------------------------------------------------//
 
+    /*
     @Override
-    public Collection<VaultSummary> getVaultsSummary() throws HrpException {
+    public Collection<VaultSummaryOld> getVaultsSummary() throws HrpException {
+        // Invoke Cleversafe list-vaults API.
+        ResponseEntity<String> response = restTemplate.getForEntity(listVaultsUrl, String.class);
+        if (!response.getStatusCode().equals(HttpStatus.OK)) {
+            throw new HrpException("Failed to call Cleversafe list-vaults service: [" + response.getStatusCode() + "] :" + response.getBody(), ErrorType.INTEGRATION_ERROR);
+        }
+
+        // Parse the response JSON.
+        Collection<VaultSummaryOld> vaultsSummary = new ArrayList<>();
+        JSONObject responseData;
+        try {
+            responseData = (JSONObject) ((JSONObject) jsonParser.parse(response.getBody())).get("responseData");
+
+        } catch (ParseException e) {
+            throw new HrpException("Failed to parse Cleversafelist-vaults response: " + e.getMessage(), ErrorType.INTEGRATION_ERROR, e);
+        }
+
+        // Iterate through the vaults and add a summary object into the collection.
+        JSONArray vaults = (JSONArray) responseData.get("vaults");
+        if (vaults != null) {
+            Iterator<JSONObject> vaultsIterator = vaults.iterator();
+            while (vaultsIterator.hasNext()) {
+                JSONObject vault = vaultsIterator.next();
+                VaultSummaryOld vaultSummary = new VaultSummaryOld();
+                vaultSummary.setName((String) vault.get("name"));
+                vaultSummary.setDescription((String) vault.get("description"));
+                vaultSummary.setCapacity((Long) vault.get("usableSize") / TERA_BYTES);
+                vaultSummary.setUsed((Long) vault.get("usedLogicalSizeFromStorage") / TERA_BYTES);
+                vaultSummary.setCreationDate(((String) vault.get("creationDate")).substring(0, 16));
+                vaultsSummary.add(vaultSummary);
+            }
+        }
+
+        return vaultsSummary;
+    }*/
+
+    @Override
+    public Collection<VaultSummary> getVaultSummary() throws HrpException {
         // Invoke Cleversafe list-vaults API.
         ResponseEntity<String> response = restTemplate.getForEntity(listVaultsUrl, String.class);
         if (!response.getStatusCode().equals(HttpStatus.OK)) {
@@ -113,44 +150,6 @@ class CleversafeManagementBrokerImpl implements CleversafeManagementBroker {
             while (vaultsIterator.hasNext()) {
                 JSONObject vault = vaultsIterator.next();
                 VaultSummary vaultSummary = new VaultSummary();
-                vaultSummary.setName((String) vault.get("name"));
-                vaultSummary.setDescription((String) vault.get("description"));
-                vaultSummary.setCapacity((Long) vault.get("usableSize") / TERA_BYTES);
-                vaultSummary.setUsed((Long) vault.get("usedLogicalSizeFromStorage") / TERA_BYTES);
-                vaultSummary.setCreationDate(((String) vault.get("creationDate")).substring(0, 16));
-                vaultsSummary.add(vaultSummary);
-            }
-        }
-
-        return vaultsSummary;
-    }
-
-    @Override
-    public Collection<NewVaultSummary> getVaultSummary() throws HrpException
-    {
-        // Invoke Cleversafe list-vaults API.
-        ResponseEntity<String> response = restTemplate.getForEntity(listVaultsUrl, String.class);
-        if (!response.getStatusCode().equals(HttpStatus.OK)) {
-            throw new HrpException("Failed to call Cleversafe list-vaults service: [" + response.getStatusCode() + "] :" + response.getBody(), ErrorType.INTEGRATION_ERROR);
-        }
-
-        // Parse the response JSON.
-        Collection<NewVaultSummary> vaultsSummary = new ArrayList<>();
-        JSONObject responseData;
-        try {
-            responseData = (JSONObject) ((JSONObject) jsonParser.parse(response.getBody())).get("responseData");
-
-        } catch (ParseException e) {
-            throw new HrpException("Failed to parse Cleversafelist-vaults response: " + e.getMessage(), ErrorType.INTEGRATION_ERROR, e);
-        }
-
-        // Iterate through the vaults and add a summary object into the collection.
-        JSONArray vaults = (JSONArray) responseData.get("vaults");
-        if (vaults != null) {
-            Iterator<JSONObject> vaultsIterator = vaults.iterator();
-            while (vaultsIterator.hasNext()) {
-                JSONObject vault = vaultsIterator.next();
-                NewVaultSummary vaultSummary = new NewVaultSummary();
                 vaultSummary.setName((String) vault.get("name"));
                 vaultSummary.setDescription((String) vault.get("description"));
                 vaultSummary.setCapacity((Long) vault.get("usableSize") / TERA_BYTES);

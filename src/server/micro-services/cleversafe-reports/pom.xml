@@ -126,7 +126,7 @@
                             <importMappings>
                                 <importMapping>ErrorResponse=gov.nih.nci.hrp.common.dto.ErrorResponse</importMapping>
                                 <importMapping>ErrorType=gov.nih.nci.hrp.common.model.ErrorType</importMapping>
-                                <importMapping>NewVaultSummary=gov.nih.nci.hrp.ms.cleversafereports.model.NewVaultSummary</importMapping>
+                                <importMapping>VaultSummary=gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary</importMapping>
                             </importMappings>
                             <templateDirectory>${project.build.directory}/openapi-templates</templateDirectory>
                             <configOptions>

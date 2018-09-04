@@ -11,14 +11,11 @@ package gov.nih.nci.hrp.ms.cleversafereports.service.impl;
 import gov.nih.nci.hrp.common.exception.HrpException;
 import gov.nih.nci.hrp.ms.cleversafereports.dto.VaultSummaryResponse;
 import gov.nih.nci.hrp.ms.cleversafereports.integration.CleversafeManagementBroker;
-import gov.nih.nci.hrp.ms.cleversafereports.model.VaultSummary;
 import gov.nih.nci.hrp.ms.cleversafereports.service.CleversafeReportsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
 
 /**
  * Reports Service Implementation.
@@ -46,20 +43,20 @@ class CleversafeReportsServiceImpl implements CleversafeReportsService {
     // ---------------------------------------------------------------------//
     // CleversafeReportsService Interface Implementation
     // ---------------------------------------------------------------------//
-
+/*
     @Override
-    public VaultSummary[] getVaultSummary() throws HrpException {
+    public VaultSummaryOld[] getVaultSummary() throws HrpException {
         // Get the vaults summary report.
-        Collection<VaultSummary> vaultsSummary = cleversafeManagementBroker.getVaultsSummary();
+        Collection<VaultSummaryOld> vaultsSummary = cleversafeManagementBroker.getVaultsSummary();
         logger.info("Vault Summary Report size: {}", vaultsSummary.size());
 
         // Return an array.
-        VaultSummary[] vaultSummariesArray = new VaultSummary[vaultsSummary.size()];
+        VaultSummaryOld[] vaultSummariesArray = new VaultSummaryOld[vaultsSummary.size()];
         return vaultsSummary.toArray(vaultSummariesArray);
-    }
+    }*/
 
     @Override
-    public VaultSummaryResponse getNewVaultSummary() throws HrpException {
+    public VaultSummaryResponse getVaultSummary() throws HrpException {
         VaultSummaryResponse vaultSummaryResponse = new VaultSummaryResponse();
 
         // Get the vault summary for all vaults from Cleversafe.

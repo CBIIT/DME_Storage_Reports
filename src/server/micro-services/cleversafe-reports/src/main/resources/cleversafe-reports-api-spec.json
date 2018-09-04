@@ -50,7 +50,7 @@
     "/cleversafereports/vaultsummary": {
       "get": {
         "summary": "Vault Summary Report",
-        "operationId": "getNewVaultSummary",
+        "operationId": "getVaultSummary",
         "tags": [
           "cleversafe reports"
         ],
@@ -78,7 +78,7 @@
         "description": "Vault Summary Response DTO",
         "type": "array",
         "items": {
-          "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json#/components/schemas/NewVaultSummary"
+          "$ref": "https://raw.githubusercontent.com/CBIIT/DME_Storage_Reports/master/src/server/micro-services/cleversafe-reports/src/main/resources/cleversafe-reports-model.json#/components/schemas/VaultSummary"
         }
       }
     }
