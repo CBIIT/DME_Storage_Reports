@@ -41,3 +41,7 @@ src/server/common/target/maven-status/maven-compiler-plugin/compile/default-comp
 src/server/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 src/server/common/target/common-0.0.1-SNAPSHOT.jar
 src/server/common/target/classes/api.mustache
+src/server/.idea/compiler.xml
+src/server/.idea/encodings.xml
+src/server/.idea/misc.xml
+src/server/.idea/vcs.xml
