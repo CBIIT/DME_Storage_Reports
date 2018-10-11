@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {VaultSummary} from "../models/vault-summary.model";
-import { MessageService} from "./message.service";
+import { VaultSummary } from "../models/vault-summary.model";
+import { MessageService } from "./message.service";
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VaultSummaryReportService {
-  private vaultSummaryReportUrl = 'https://fr-s-hpcdm-gp-d.ncifcrf.gov:7748/v1/cleversafereports/vaultsummary';
+  private vaultSummaryReportUrl = environment.apiUrl + '/v1/cleversafereports/vaultsummary';
 
   constructor(private httpClient: HttpClient, private messageService: MessageService) { }
 
