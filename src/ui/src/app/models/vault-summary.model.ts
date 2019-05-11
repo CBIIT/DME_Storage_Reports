@@ -3,6 +3,7 @@ export class VaultSummary {
   name: string;
   description: string;
   capacity: number;
+  quota: number;
   used: number;
   creationDate: string;
 }

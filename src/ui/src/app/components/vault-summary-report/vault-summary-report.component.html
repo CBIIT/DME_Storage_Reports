@@ -6,6 +6,7 @@
         <th align="left">Description</th>
         <th align="left">Creation Date</th>
         <th align="left">Capacity (TB)</th>
+        <th align="left">Quota (TB)</th>
         <th align="left">Used (TB)</th>
       </tr>
     </thead>
@@ -13,14 +14,22 @@
       <td>{{vault.name}}</td>
       <td>{{vault.description}}</td>
       <td>{{vault.creationDate}}</td>
+
       <td *ngIf="vault.capacity >= 1 || vault.capacity < 0.01; else smallCapacity">{{vault.capacity.toFixed(0)}}</td>
       <ng-template #smallCapacity>
         <td>{{vault.capacity.toFixed(2)}}</td>
       </ng-template>
+
+      <td *ngIf="vault.quota != null; else noQuota">{{vault.quota.toFixed(0)}}</td>
+      <ng-template #noQuota>
+        <td>N/A</td>
+      </ng-template>
+
       <td *ngIf="vault.used >= 1 || vault.used < 0.01; else smallUsed">{{vault.used.toFixed(0)}}</td>
       <ng-template #smallUsed>
         <td>{{vault.used.toFixed(2)}}</td>
       </ng-template>
+
     </tr>
   </table>
 </div>
