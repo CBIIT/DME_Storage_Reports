@@ -25,6 +25,11 @@
             "description": "Vault capacity used in TB",
             "format": "double"
           },
+          "quota": {
+            "type": "number",
+            "description": "Vault quota in TB",
+            "format": "double"
+          },
           "creationDate": {
             "type": "string",
             "description": "Vault creation date"

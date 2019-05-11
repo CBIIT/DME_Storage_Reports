@@ -131,7 +131,7 @@
                             <templateDirectory>${project.build.directory}/openapi-templates</templateDirectory>
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
-                                <serializableModel>true</serializableModel>
+                                <serializableModel>false</serializableModel>
                                 <withXML>true</withXML>
                                 <useTags>true</useTags>
                                 <hideGenerationTimestamp>true</hideGenerationTimestamp>
