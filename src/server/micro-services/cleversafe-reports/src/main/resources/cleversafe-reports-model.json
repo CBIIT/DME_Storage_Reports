@@ -25,6 +25,11 @@
             "description": "Vault capacity used in TB",
             "format": "double"
           },
+          "uploaded": {
+            "type": "number",
+            "description": "Estimated capacity uploaded in TB",
+            "format": "double"
+          },
           "quota": {
             "type": "number",
             "description": "Vault quota in TB",

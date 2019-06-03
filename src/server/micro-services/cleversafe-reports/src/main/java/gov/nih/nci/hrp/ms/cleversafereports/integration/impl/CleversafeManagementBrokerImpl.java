@@ -115,7 +115,8 @@ class CleversafeManagementBrokerImpl implements CleversafeManagementBroker {
                 vaultSummary.setName((String) vault.get("name"));
                 vaultSummary.setDescription((String) vault.get("description"));
                 vaultSummary.setCapacity((Long) vault.get("usableSize") / TERA_BYTES);
-                    vaultSummary.setUsed((Long) vault.get("estimateUsableUsedLogicalSizeFromStorage") / TERA_BYTES);
+                vaultSummary.setUsed((Long) vault.get("usedLogicalSizeFromStorage") / TERA_BYTES);
+                vaultSummary.setUploaded((Long) vault.get("estimateUsableUsedLogicalSizeFromStorage") / TERA_BYTES);
                 vaultSummary.setCreationDate(((String) vault.get("creationDate")).substring(0, 16));
                 Object quota = vault.get("hardQuota");
                 vaultSummary.setQuota(quota != null ? (Long) quota / TERA_BYTES : null);
