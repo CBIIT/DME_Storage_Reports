@@ -8,6 +8,7 @@
         <th align="left">Capacity (TB)</th>
         <th align="left">Quota (TB)</th>
         <th align="left">Used (TB)</th>
+        <th align="left">Uploaded (TB)</th>
       </tr>
     </thead>
     <tr class="w3-hover-light-blue" *ngFor="let vault of vaults">
@@ -28,6 +29,11 @@
       <td *ngIf="vault.used >= 1 || vault.used < 0.01; else smallUsed">{{vault.used.toFixed(0)}}</td>
       <ng-template #smallUsed>
         <td>{{vault.used.toFixed(2)}}</td>
+      </ng-template>
+
+      <td *ngIf="vault.uploaded >= 1 || vault.uploaded < 0.01; else smallUploaded">{{vault.uploaded.toFixed(0)}}</td>
+      <ng-template #smallUploaded>
+        <td>{{vault.uploaded.toFixed(2)}}</td>
       </ng-template>
 
     </tr>

@@ -5,5 +5,6 @@ export class VaultSummary {
   capacity: number;
   quota: number;
   used: number;
+  uploaded: number;
   creationDate: string;
 }
