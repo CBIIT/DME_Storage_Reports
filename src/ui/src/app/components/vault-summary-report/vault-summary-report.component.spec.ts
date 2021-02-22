@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VaultSummaryReportComponent } from './vault-summary-report.component';
 
@@ -6,7 +6,7 @@ describe('VaultSummaryReportComponent', () => {
   let component: VaultSummaryReportComponent;
   let fixture: ComponentFixture<VaultSummaryReportComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VaultSummaryReportComponent ]
     })
