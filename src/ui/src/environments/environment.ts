@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://fr-s-hpcdm-uat-p.ncifcrf.gov:7748'
+  apiUrl: 'https://fsdmel-dsapi01d.ncifcrf.gov:7748'
 };
 
 /*
